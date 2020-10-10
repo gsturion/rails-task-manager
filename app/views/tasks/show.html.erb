@@ -1,0 +1,14 @@
+<h1>Task info</h1>
+
+<p>Title: <%= @task.title %></p>
+<p>Details: <%= @task.details %></p>
+<p>Completed: <%= @task.completed %></p>
+<p>
+<%= link_to "Edit this task", edit_task_path(@task), method: :get %>
+</p>
+<p>
+<%= link_to "Remove this task", task_path, method: :delete %>
+</p>
+<p>
+<%= link_to "Voltar para as tasks", tasks_path, method: :get %>
+</p>
